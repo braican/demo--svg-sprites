@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <title>SVG Sprites</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" id="svg-sprite"></div>
+
+    <div id="icons">
+        
+        <div class="quote-box">
+            <svg class="icon icon--quote-marks"><use xlink:href="#icon--quote-marks"></use></svg>
+            <p>"Some quote that is super motivational and stuff"</p>
+        </div>
+        
+        <br>
+
+        <div>
+            This is a link <svg class="icon icon--cta"><use xlink:href="#icon--cta"></use></svg>
+        </div>
+
+
+    </div>
     
+
+    <script>
+
+        var request = new XMLHttpRequest();
+        var spriteDiv = document.getElementById("svg-sprite");
+
+        request.open('GET', 'svg/build/icons.svg', true);
+
+        request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                var resp = this.response;
+                console.log(resp);
+                spriteDiv.innerHTML = resp;
+            } else {
+                console.error("There was an error getting the icons");
+            }
+        };
+
+        request.onerror = function() {
+            console.error("There was an error getting the icons");
+        };
+
+        request.send();
+
+    </script>
 </body>
 </html>

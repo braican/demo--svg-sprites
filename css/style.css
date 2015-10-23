@@ -1,0 +1,39 @@
+
+#svg-sprite{
+    display: none;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+/* ==============================================================
+   --icons
+   ============================================================== */
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon--quote-marks{
+    fill:red;
+    width: 40px;
+    height: 20px;
+}
+.icon--cta{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+/* ==============================================================
+   --other
+   ============================================================== */
+.quote-box{
+    width: 200px;
+    background: #172c3a;
+    padding: 20px;
+    color: #fff;
+}

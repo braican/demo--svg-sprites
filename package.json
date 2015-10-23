@@ -1,0 +1,25 @@
+{
+  "name": "svg-sprites",
+  "version": "1.0.0",
+  "description": "A demo for creating svg sprites and why they're awesome",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braican/demo--svg-sprites.git"
+  },
+  "author": "braican",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braican/demo--svg-sprites/issues"
+  },
+  "homepage": "https://github.com/braican/demo--svg-sprites#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-svgstore": "^5.0.5"
+  }
+}
