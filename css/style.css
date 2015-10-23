@@ -7,6 +7,11 @@ body{
     font-family: sans-serif;
 }
 
+a{
+    color: #172c3a;
+    text-decoration: none;
+}
+
 
 /* ==============================================================
    --icons
@@ -16,13 +21,14 @@ body{
     vertical-align: middle;
 }
 .icon--quote-marks{
-    fill:red;
+    fill:white;
     width: 40px;
     height: 20px;
 }
 .icon--cta{
-    width: 20px;
-    height: 20px;
+    width: 14px;
+    height: 12px;
+    margin-left: 4px;
 }
 
 
@@ -36,4 +42,5 @@ body{
     background: #172c3a;
     padding: 20px;
     color: #fff;
+    text-align: center;
 }
