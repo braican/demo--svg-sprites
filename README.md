@@ -87,5 +87,5 @@ request.send();
 ```
 
 ## Other links
-*[gulp-svgstore](https://github.com/w0rm/gulp-svgstore) - the gulp task.
-*[svg-encode](https://github.com/braican/svg-encode) - npm module to copy a URI encoded svg to your clipboard, for use as a data URI.
+* [gulp-svgstore](https://github.com/w0rm/gulp-svgstore) - the gulp task.
+* [svg-encode](https://github.com/braican/svg-encode) - npm module to copy a URI encoded svg to your clipboard, for use as a data URI.
