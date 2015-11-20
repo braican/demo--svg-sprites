@@ -4,11 +4,11 @@ var gulp     = require('gulp'),
     rename   = require('gulp-rename');
 
 gulp.task('svgstore', function () {
-    return gulp.src('svg/icons/**/*.svg')
+    return gulp.src('demos/svg/icons/**/*.svg')
             .pipe(rename({prefix: 'icon--'}))
             .pipe( svgmin() )
             .pipe(svgstore({
                 inlineSvg: true
             }))
-            .pipe(gulp.dest('svg/build/'));
+            .pipe(gulp.dest('demos/svg/build/'));
 });
